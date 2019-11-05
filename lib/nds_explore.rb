@@ -17,5 +17,6 @@ def print_first_directors_movie_titles
   titles = titles.flatten                               #reduce AoA to single array
   movies = ""                                           #store movies list here
   titles.length.times { |index| movies += "#{titles[index]}\n"}
+  #or titles.length.times { |index| puts "#{titles[index]}"}  //still doesn't work
   movies
 end
