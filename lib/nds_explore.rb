@@ -10,10 +10,10 @@ end
 
 def print_first_directors_movie_titles
   pretty_print_nds(directors_database)
-  db = []
+  db = []                 #for directors_database
   db = directors_database
-  array =[]
-  array.push( db[0][:movies].map { |s| s[:title]} )
-  array = array.flatten
+  titles =[]                                            #to collect the titles
+  titles.push( db[0][:movies].map { |s| s[:title]} )    #map return an array
+  titles = titles.flatten                               #reduce AoA to single array
   array.length.times { |index| puts array[index]}
 end
