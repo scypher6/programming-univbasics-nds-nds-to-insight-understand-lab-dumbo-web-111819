@@ -12,4 +12,5 @@ def print_first_directors_movie_titles
   pretty_print_nds(directors_database)
   db = []
   db = directors_database
+  puts db[0][:movies].map { |s| s[:title]}
 end
