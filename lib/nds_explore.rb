@@ -9,7 +9,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  pretty_print_nds(directors_database)
+  directors_database
   db = []                 #for directors_database
   db = directors_database
   titles =[]                                            #to collect the titles
