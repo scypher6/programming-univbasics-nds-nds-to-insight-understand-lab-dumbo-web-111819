@@ -15,5 +15,5 @@ def print_first_directors_movie_titles
   titles =[]                                            #to collect the titles
   titles.push( db[0][:movies].map { |s| s[:title]} )    #map return an array
   titles = titles.flatten                               #reduce AoA to single array
-  array.length.times { |index| puts array[index]}
+  titles.length.times { |index| movies += " #{titles[index]}\n"}
 end
