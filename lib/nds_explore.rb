@@ -9,7 +9,7 @@ def pretty_print_nds(nds)
 end
 
 def print_first_directors_movie_titles
-  #pretty_print_nds(directors_database)
+  #pretty_print_nds(directors_database)           #prints the db of directors and filmography
   db = []                 #for directors_database
   db = directors_database
   db[0][:movies].each { |s| puts s[:title]}
