@@ -12,11 +12,6 @@ def print_first_directors_movie_titles
   #pretty_print_nds(directors_database)
   db = []                 #for directors_database
   db = directors_database
-  titles =[]                                            #to collect the titles
-  titles.push( db[0][:movies].map { |s| s[:title]} )    #map returns an array
-  titles = titles.flatten                               #reduce AoA to single array
-  movies = ""                                           #store movies list here
-  #titles.length.times { |index| movies += "#{titles[index]}\n"}
-  titles.length.times { |index| puts "#{titles[index]}"}  
+  db[0][:movies].each { |s| puts s[:title]}
   
 end
